@@ -28,11 +28,9 @@ export default function SignIn() {
   const navigate = useNavigate();
 
   const onSubmit = async (data) => {
-
     try {
       const response = await login(data);
       if (!response?.data?.roles.includes(ADMIN_ROLE)) {
-
         dispatch(setIsToastMessageShow());
         dispatch(
           setMessage({
@@ -65,9 +63,12 @@ export default function SignIn() {
     }
   };
   return (
-    <div className="mt-16 mb-16 flex h-full w-full items-center justify-center px-2 md:mx-0 md:px-0 lg:mb-10 lg:items">
+    <div className="lg:items mb-16 mt-16 flex h-full w-full items-center justify-center px-2 md:mx-0 md:px-0 lg:mb-10">
       {/* Sign in section */}
-      <form onSubmit={handleSubmit(onSubmit)} className="w-full px-4 lg:px-[100px] lg:-translate-y-[20%]">
+      <form
+        onSubmit={handleSubmit(onSubmit)}
+        className="w-full px-4 lg:-translate-y-[20%] lg:px-[100px]"
+      >
         <div className="mt-[10vh] w-full max-w-full flex-col items-center md:pl-4 lg:pl-0">
           <h4 className="mb-2.5 text-4xl font-bold text-navy-700 dark:text-white">
             Đăng nhập
@@ -80,21 +81,23 @@ export default function SignIn() {
           <InputField
             variant="auth"
             extra="mb-6"
-            label="Email*"
-            placeholder="mail@gmail.com"
+            label="Email"
+            placeholder="Email"
             id="email"
             type="email"
             name="email"
             register={register("email")}
+            required={true}
             helperText={errors.email ? errors.email.message : ""}
           />
 
           {/* Password */}
           <InputField
+            required={true}
             variant="auth"
             extra="mb-6"
-            label="Mật khẩu*"
-            placeholder="Tối thiểu 8 ký tự"
+            label="Mật khẩu"
+            placeholder="Mật khẩu"
             id="password"
             type="password"
             name="password"
@@ -112,7 +115,7 @@ export default function SignIn() {
           </div> */}
           <button
             type="submit"
-            className="flex justify-center linear mt-2 w-full max-w-[189px] rounded-xl bg-brand-500 py-[12px] text-base font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 dark:bg-brand-400 dark:text-white dark:hover:bg-brand-300 dark:active:bg-brand-200"
+            className="linear mx-auto mt-2 flex w-full max-w-[189px] justify-center rounded-xl bg-[#0360D9] py-[12px] text-base font-medium text-white transition duration-200 hover:bg-brand-600 active:bg-brand-700 dark:bg-brand-400 dark:text-white dark:hover:bg-brand-300 dark:active:bg-brand-200"
           >
             Đăng nhập
           </button>
