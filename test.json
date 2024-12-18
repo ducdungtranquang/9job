@@ -1,0 +1,97 @@
+{
+  "activity_category_id": 7,
+  "name": "test",
+  "thumbnail": "/storage/files/shares/images/club1.png",
+  "heading": "Activity heading",
+  "link": "Activity URL",
+  "description": "Activity description",
+  "button_label": "Button label",
+  "salary": "1200",
+  "currency": "$",
+  "skills": ["skill 1", "skill 2"],
+  "type": "offline",
+
+  "form": "form",
+  "tags": ["kinh doanh, kinh tế"],
+  "range": "range",
+  "industry": "industry",
+  "location": "location",
+  "work_type": "work type",
+  "oranization": "oranization",
+  "level": "level",
+  "major": "major",
+  "country": "country",
+  "start_time": "start time",
+  "cost": "cost",
+  "detail_level": "detail level",
+  "tools": "tools",
+  "union_point": "union point",
+  "result": "result",
+  "sections": [
+    {
+      "name": "Section name 1",
+      "order": "1",
+      "contents": [
+        {
+          "title": "Content title 1",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "isCard": false,
+          "cards": []
+        },
+        {
+          "title": "Content title 2",
+          "description": "Content description",
+          "isCard": false,
+          "cards": []
+        },
+        {
+          "title": "Content title 3",
+          "description": "Content description",
+          "isCard": true,
+          "cards": [
+            {
+              "name": "Card name 1",
+              "description": "Card description",
+              "thumbnail": "/storage/files/shares/images/club1.png",
+              "button_label": "Card button label",
+              "url": "https://www.facebook.com/groups/tansinhvienneu"
+            },
+            {
+              "name": "Card name 2",
+              "description": "Card description",
+              "thumbnail": "/storage/files/shares/images/club1.png",
+              "button_label": "Card button label",
+              "url": "https://www.facebook.com/groups/tansinhvienneu"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Section name 2",
+      "order": "1",
+      "contents": [
+        {
+          "title": "Content title",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "isCard": false,
+          "cards": []
+        },
+        {
+          "title": "Content title",
+          "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+          "isCard": true,
+          "cards": [
+            {
+              "name": "Card name",
+              "description": "Card description",
+              "thumbnail": "/storage/files/shares/images/club1.png",
+              "button_label": "Card button label",
+              "url": "https://www.facebook.com/groups/tansinhvienneu"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

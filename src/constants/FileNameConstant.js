@@ -1,0 +1,12 @@
+export const LOGO_FOLDER = 'logos';
+export const COURSE_FOLDER = "courses";
+export const DOC_FOLDER = "documents";
+export const HANDBOOK_FOLDER = "handbooks";
+export const CAREER_FOLDER = "careers";
+export const INSTRUCTOR_FOLDER = "instructors";
+export const ACTIVITIES_FOLDER = "activites";
+export const BANNER_FOLDER = "banners";
+export const PARTNERS_FOLDER = "partners";
+export const REVIEWS_FOLDER = "reviews";
+export const UNIVERSITY_FOLDER = "universities";
+export const FANPAGE_FOLDER = "fanpages";

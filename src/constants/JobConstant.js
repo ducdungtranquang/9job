@@ -1,0 +1,12 @@
+export const JOB_STATUS = {
+    PENDING: "PENDING",
+    INACTIVE: "INACTIVE",
+    REFUSE: "REFUSE",
+    POSTED: "POSTED",
+}
+export const CV_JOB_STATUS = {
+    PENDING: "PENDING",
+    INACTIVE: "INACTIVE",
+    REFUSE: "REFUSE",
+    POSTED: "POSTED",
+}
